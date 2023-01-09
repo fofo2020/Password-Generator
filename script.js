@@ -88,20 +88,62 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
 
+
+// Function to prompt user for password options
+function getPasswordOptions(){
+
+ 
+ 
 }
+
+
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
 
 }
 
+
+
+
 // Function to generate password with user input
 function generatePassword() {
 
-}
+
+let optionsArray = [];
+let characterArray = [];
+
+// prompt lenght password 
+
+let passwordLength = prompt ("enter password length between 10 & 64 characters");
+  while (passwordLength < 10 || passwordLength > 64 || isNaN(passwordLength)) {
+    passwordLength = prompt ("Enter password length between 10 & 64 characters")};
+ 
+  
+  
+ //confirmation box for uppercase characters 
+ let optionUpperCase = confirm('Do you want uppercase characters ?');
+
+
+// Confirmation box lowercase characters
+let optionLowerCase = confirm('Do you want lowercase characters ?');
+
+
+// Confirmation box lowercase characters
+let optionNumericCase = confirm('Do you want numeric characters ?');
+
+
+// Confirmation box lowercase characters
+let optionSpecialCase = confirm('Do you want special characters ?');
+
+
+
+  }
+
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
