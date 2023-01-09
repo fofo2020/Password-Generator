@@ -106,14 +106,14 @@ function getRandom(arr) {
 }
 
 
-
-
 // Function to generate password with user input
 function generatePassword() {
 
 
-let optionsArray = [];
-let characterArray = [];
+
+  let optionsArray = [];
+  let characterArray = [];
+  
 
 // prompt lenght password 
 
@@ -123,24 +123,39 @@ let passwordLength = prompt ("enter password length between 10 & 64 characters")
  
   
   
- //confirmation box for uppercase characters 
+ //Confirmation box for uppercase characters 
  let optionUpperCase = confirm('Do you want uppercase characters ?');
+  upperCasedCharacters.forEach(function(element){
+    characterArray.push(element)})
 
 
 // Confirmation box lowercase characters
 let optionLowerCase = confirm('Do you want lowercase characters ?');
+  lowerCasedCharacters.forEach(function(element){
+    characterArray.push(element)});
 
 
-// Confirmation box lowercase characters
+
+// Confirmation box Numeric characters
 let optionNumericCase = confirm('Do you want numeric characters ?');
+  numericCharacters.forEach(function(element) {
+    characterArray.push(element)})
+  
 
 
-// Confirmation box lowercase characters
+// Confirmation box  Special characters
 let optionSpecialCase = confirm('Do you want special characters ?');
+  specialCharacters.forEach(function(element){
+    characterArray.push(element)})
+  
 
+optionsArray.push(characterArray);
+optionsArray.push(passwordLength);
 
+console.log(passwordLength)
+console.log(characterArray)
 
-  }
+}
 
 
 
