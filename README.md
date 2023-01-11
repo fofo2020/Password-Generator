@@ -1,11 +1,13 @@
 # Password-Generator
 
 
-This Web Application will propmt the user to select a number of string of characters betweent 10 and 64 charac that will difene the password length. (Note: if user inputs password length not betwen 10-64, application will not run and will have to chose the accepted lenght critera!)
+## This Web Application generate a secure password combainig diferent charactes and lengths.
 
-Application will also  prompt the type of characters that user wants to include on the password( Lowercase, UpperCase, Numeric & symbols).
+## Application will start by propmting the user to input the length of the password "Accepted length between 10 and 64". (Note: if the user inputs a password length not between 10-64 char, application will not proceed to the next step and the user will have to input again on the accepted lenght critera!)
 
-Then javascrip will generate automaticly from the password options arry and randomly selecting character elements,  returning the resulting password in blue! ( If usr is not happy with the password, can run the code again until the generated password satisfies the user. 
+## Application will  prompt the type of characters that user wants to include on the password( Lowercase, UpperCase, Numeric & symbols).
+
+## Then javascript code will generate  the password from the randomly selected character elements on the array. 
 
 Thanks for reading!
 
