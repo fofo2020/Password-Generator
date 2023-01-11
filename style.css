@@ -108,7 +108,8 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size:xx-large;
+  font-weight: bold;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -116,6 +117,8 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  text-decoration: solid;
+  color:rgb(0, 110, 255);
 }
 
 @media (max-width: 690px) {

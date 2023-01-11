@@ -93,23 +93,6 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions(){
 
- 
- 
-}
-
-
-
-
-// Function for getting a random element from an array
-function getRandom(arr) {
-
-}
-
-
-// Function to generate password with user input
-function generatePassword() {
-
-
 
   let optionsArray = [];
   let characterArray = [];
@@ -148,16 +131,31 @@ let optionSpecialCase = confirm('Do you want special characters ?');
   specialCharacters.forEach(function(element){
     characterArray.push(element)})
   
+    optionsArray.push(characterArray);
+    
+  return {characterOptions:characterArray, length:passwordLength};
+  }
 
-optionsArray.push(characterArray);
-optionsArray.push(passwordLength);
 
-console.log(passwordLength)
-console.log(characterArray)
-
+// Function for getting a random element from an array
+function getRandom(options) {
+  var password =''; 
+  // console.log(options)
+  for ( var i=0; i<options.length; i++ ){
+  password = password + options.characterOptions[Math.floor(Math.random()*(options.characterOptions.length))];
+   console.log(options)
+   
+ }
+ return password;
 }
 
 
+
+
+// Function to generate password with user input
+function generatePassword() {
+   let options = getPasswordOptions();{
+      return (getRandom (options))}}
 
 
 // Get references to the #generate element
